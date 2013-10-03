@@ -1,0 +1,11 @@
+dn: cn=schema
+objectClass: top
+objectClass: ldapSubentry
+objectClass: subschema
+cn: schema
+attributeTypes: ( myFirstName-oid NAME 'myFirstName' EQUALITY caseIgnoreMatch ORDERING caseIgnoreOrderingMatch SUBSTR caseIgnoreSubstringsMatch SYNTAX 1.3.6.1.4.1.1466.115.121.1.15 SINGLE-VALUE USAGE userApplications )
+attributeTypes: ( myLastName-oid NAME 'myLastName' EQUALITY caseIgnoreMatch ORDERING caseIgnoreOrderingMatch SUBSTR caseIgnoreSubstringsMatch SYNTAX 1.3.6.1.4.1.1466.115.121.1.15 SINGLE-VALUE USAGE userApplications )
+objectClasses: ( myPerson-oid NAME 'myPerson' SUP top STRUCTURAL MUST uid MAY ( myFirstName $ myLastName ) )
+ds-sync-generation-id: 8408
+modifiersName: cn=Directory Manager,cn=Root DNs,cn=config
+modifyTimestamp: 20121210152400Z

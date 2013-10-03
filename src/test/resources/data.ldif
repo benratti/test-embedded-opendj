@@ -1,0 +1,16 @@
+dn: o=mycompagny,o=org
+o: mycompagny
+objectClass: organization
+objectClass: top
+
+dn: ou=people,o=mycompagny,o=org
+ou: people
+objectClass: organizationalUnit
+objectClass: top
+
+dn: uid=myuser,ou=people,o=mycompagny,o=org
+uid: myuser
+myFirstName: Paul
+myLastName: Smith
+objectClass: top
+objectClass: myPerson
